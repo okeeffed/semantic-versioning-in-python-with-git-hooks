@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/demo-pip-math"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+pytest = "*"
+setuptools = "*"
+wheel = "*"
+twine = "*"
+tqdm = "*"
+pre-commit = "*"
+commitizen = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+test = "pytest"
+build = "python3 setup.py sdist bdist_wheel"
+deploy = "twine upload dist/*"
