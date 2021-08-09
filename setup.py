@@ -1,11 +1,17 @@
 import setuptools
+import toml
+
+with open("pyproject.toml", "r") as fh:
+    toml_str = fh.read()
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+parsed_toml = toml.loads(toml_str)
+
 setuptools.setup(
     name="demo_pip_math",
-    version="0.1.0",
+    version=parsed_toml['tool']['commitizen']['version'],
     author="Dennis O'Keeffe",
     author_email="hello@dennisokeeffe.com",
     description="Demo your first Pip package.",

@@ -13,6 +13,7 @@ twine = "*"
 tqdm = "*"
 pre-commit = "*"
 commitizen = "*"
+toml = "*"
 
 [requires]
 python_version = "3.9"
