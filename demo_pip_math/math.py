@@ -35,3 +35,16 @@ def multiply(x: int, y: int) -> int:
                     int: product of x and y
     """
     return x * y
+
+
+def divide(x: int, y: int) -> float:
+    """divide one number by another
+
+    Args:
+                    x (int): first number in the division
+                    y (int): second number in the division
+
+    Returns:
+                    int: division of x and y
+    """
+    return x / y
